@@ -7,9 +7,7 @@ import Header from '../components/Header'
 import './index.css'
 
 const TemplateWrapper = ({ children }) => (
-  <div className={css`
-    background-color: hotpink;
-  `}>
+  <div>
     <Helmet
       title="Gatsby Default Starter"
       meta={[
