@@ -1,5 +1,22 @@
 import React from 'react';
 
-export default () => {
-  return <div>post</div>
+export default ({ data }) => {
+  const post = data.markdownRemark;
+  return (
+    <div>
+      <h2>{post.frontmatter.title}</h2>
+      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    </div>
+  );
 };
+
+export const query = graphql`
+  query PostQuery($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+`;
