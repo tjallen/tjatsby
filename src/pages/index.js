@@ -17,6 +17,7 @@ const IndexPage = ({ data }) => (
             </h3>
             <p>{node.excerpt}</p>
           </Link>
+          <span>tags: {node.frontmatter.tags.join(', ')}</span>
         </div>
       ))}
     </div>
@@ -40,6 +41,7 @@ export const query = graphql`
         frontmatter {
           title
           date(formatString: "DD MMMM, YYYY")
+          tags
         }
         fields {
           slug
