@@ -1,5 +1,6 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import Tags from '../components/tags';
 
 const IndexPage = ({ data }) => (
   <div>
@@ -17,7 +18,7 @@ const IndexPage = ({ data }) => (
             </h3>
             <p>{node.excerpt}</p>
           </Link>
-          <span>tags: {node.frontmatter.tags.join(', ')}</span>
+          <Tags list={node.frontmatter.tags || []}/>
         </div>
       ))}
     </div>
