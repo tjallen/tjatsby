@@ -38,7 +38,7 @@ const createTagPages = (createPage, edges) => {
   Object.keys(posts).forEach(tagName => {
     const post = posts[tagName];
     createPage({
-      path: `./tags/${tagName}`,
+      path: `tags/${tagName}`,
       component: tagTemplate,
       context: {
         posts,
