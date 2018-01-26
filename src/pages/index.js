@@ -8,11 +8,15 @@ const IndexPage = ({ data }) => (
     <div>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
-          <h3>
-            {node.frontmatter.title}{" "}
-            <span>— {node.frontmatter.date}</span>
-          </h3>
-          <p>{node.excerpt}</p>
+          <Link
+            to={node.fields.slug}
+          >
+            <h3>
+              {node.frontmatter.title}{" "}
+              <span>— {node.frontmatter.date}</span>
+            </h3>
+            <p>{node.excerpt}</p>
+          </Link>
         </div>
       ))}
     </div>
@@ -36,6 +40,9 @@ export const query = graphql`
         frontmatter {
           title
           date(formatString: "DD MMMM, YYYY")
+        }
+        fields {
+          slug
         }
         excerpt
       }
