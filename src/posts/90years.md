@@ -6,9 +6,9 @@ page_links:
 - link_text: App
   link_url: /projects/90years
 casestudy: true
-thumb: images/90years-thumb.jpg
+thumb: 90years-thumb.jpg
 photos:
-  - "images/90years-post.jpg"
+  - "90years-post.jpg"
 repo: https://github.com/tjallen/90years
 tags: ['JavaScript', 'React', 'Jest', 'Enzyme']
 

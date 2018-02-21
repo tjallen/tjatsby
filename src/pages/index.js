@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Tags from '../components/tags';
-
+import WorkImage from '../components/workImage';
 
 const IndexPage = ({ data }) => (
   <div>
@@ -13,6 +13,7 @@ const IndexPage = ({ data }) => (
           <Link
             to={node.fields.slug}
           >
+           <WorkImage url={node.frontmatter.thumb} /> 
             <h3>
               {node.frontmatter.title}{" "}
             </h3>
@@ -43,6 +44,7 @@ export const query = graphql`
           date(formatString: "DD MMMM, YYYY")
           tags
           description
+          thumb
         }
         fields {
           slug

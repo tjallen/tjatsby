@@ -3,8 +3,8 @@ title: react-simple-range
 description: React numerical input component
 date: 2016-10-12 19:05:50
 casestudy: true
-thumb: images/reactsimplerange-thumb.jpg
-image_post: /images/reactsimplerange-post-crop.jpg
+thumb: reactsimplerange-thumb.jpg
+image_post: reactsimplerange-post-crop.jpg
 repo: https://github.com/tjallen/react-simple-range
 pkg: https://www.npmjs.com/package/react-simple-range
 page_links:

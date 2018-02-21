@@ -8,7 +8,7 @@ tags:
 agency: StirPR
 agency_url: http://www.stirpublicrelations.com/
 casestudy: true
-thumb: /images/felix-thumb.jpg
+thumb: felix-thumb.jpg
 page_links:
 - link_text: Sample email
   link_url: /projects/felix/

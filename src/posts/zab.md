@@ -9,8 +9,8 @@ tags:
 - SASS
 - Grav
 - Responsive design
-thumb: images/zab-thumb.jpg
-image_cover: images/zab-cover.jpg
+thumb: zab-thumb.jpg
+image_cover: zab-cover.jpg
 repo: https://github.com/tjallen/zab
 ---
 

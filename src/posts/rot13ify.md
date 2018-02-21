@@ -2,6 +2,7 @@
 title: rot13ify
 description: Chrome extension providing ROT13 encoding
 date: 2018-01-01
+thumb: rot13ify-thumb.jpg
 tags: ['JavaScript', 'Chrome API']
 ---
 # rot13ify

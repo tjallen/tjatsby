@@ -6,8 +6,8 @@ page_links:
   link_url: /projects/conway/
 casestudy: true
 date: 2016-10-06 19:05:50
-thumb: /images/gol-thumb.jpg
-image_post: /images/gol-cover.jpg
+thumb: gol-thumb.jpg
+image_post: gol-cover.jpg
 repo: https://github.com/tjallen/conway
 tags:
 - JavaScript

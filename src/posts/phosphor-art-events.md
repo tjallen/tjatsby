@@ -3,12 +3,12 @@ title: Phosphor Art events
 description: Responsive landing pages
 casestudy: true
 date: 2016-10-07 19:05:50
-thumb: "/images/phosphor-thumb.jpg"
-image_cover: "/images/phosphor-cover.jpg"
+thumb: "phosphor-thumb.jpg"
+image_cover: "phosphor-cover.jpg"
 photos:
-- "images/phosphor-amv.jpg"
-- "images/phosphor-email.jpg"
-- "images/phosphor-saa.jpg"
+- "phosphor-amv.jpg"
+- "phosphor-email.jpg"
+- "phosphor-saa.jpg"
 page_links:
 - link_url: http://www.phosphorart.com/email/postcards/
   link_text: Postcard email

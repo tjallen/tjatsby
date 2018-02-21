@@ -2,8 +2,8 @@
 title: countdown-app
 description: React & Electron app
 casestudy: true
-thumb: images/countdown-app-thumb-alt.jpg
-image_post: /images/countdown-app-post.jpg
+thumb: countdown-app-thumb-alt.jpg
+image_post: /countdown-app-post.jpg
 repo: https://github.com/tjallen/countdown-app
 date: 2016-11-10 12:06:04
 page_links:

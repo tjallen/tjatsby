@@ -3,11 +3,11 @@ title: ASOS.com
 date: 2017-06-01 13:23:08
 description:  PayPal & Hostelworld microsites
 casestudy: true
-thumb: images/asos-thumb.jpg
+thumb: asos-thumb.jpg
 photos:
-- "images/asos-hostelworld-de.jpg"
-- "images/asos-paypal.jpg"
-- "images/asos-terms-fr.jpg"
+- "asos-hostelworld-de.jpg"
+- "asos-paypal.jpg"
+- "asos-terms-fr.jpg"
 tags:
 - HTML & CSS
 - SASS

@@ -5,13 +5,13 @@ date: 2016-10-10 19:05:50
 casestudy: true
 agency: Antidote
 agency_url: http://www.antidote.co.uk/
-image_post: /images/libra-cover.jpg
+image_post: libra-cover.jpg
 page_links:
   - link_text: The player
     link_url: /projects/nightingale
   - link_text: Antidote's case study
     link_url: http://www.antidote.co.uk/work/libratone-x-sigma-presents-nightingale/
-thumb: images/libra-thumb.jpg
+thumb: libra-thumb.jpg
 tags:
 - JavaScript
 - jQuery
