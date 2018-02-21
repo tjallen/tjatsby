@@ -4,9 +4,11 @@ import styled from 'react-emotion';
 
 const StyledImage = styled('img')`
   max-height: 100px;
-  max-width: 100px;
+  width: auto;
   float: left;
   margin-right: 10px;
+  display: inline-block;
+  height: 100%;
 `;
 
 const workImage = ({ url }) => (
