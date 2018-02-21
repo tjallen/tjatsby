@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Tags from '../components/tags';
 
+
 const IndexPage = ({ data }) => (
   <div>
     <h1>{data.site.siteMetadata.title}</h1>
@@ -14,15 +15,13 @@ const IndexPage = ({ data }) => (
           >
             <h3>
               {node.frontmatter.title}{" "}
-              <span>— {node.frontmatter.date}</span>
             </h3>
-            <p>{node.excerpt}</p>
           </Link>
+          <p>{node.frontmatter.description}</p>
           <Tags list={node.frontmatter.tags || []}/>
         </div>
       ))}
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </div>
 );
 
@@ -43,11 +42,11 @@ export const query = graphql`
           title
           date(formatString: "DD MMMM, YYYY")
           tags
+          description
         }
         fields {
           slug
         }
-        excerpt
       }
     }
   }
