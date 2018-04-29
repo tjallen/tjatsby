@@ -6,3 +6,6 @@ html {
 body {
   margin: 0;
 }
+html, body, div[data-reactroot], div#___gatsby {
+  height: 100%;
+}

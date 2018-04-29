@@ -2,28 +2,27 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Tags from '../components/tags';
 import WorkImage from '../components/workImage';
+import logo from '../../static/images/tja_logo.svg';
+import styled from 'react-emotion';
+
+const Wrapper = styled('div')`
+  height: 100%;
+  color: #fff;
+  background: #303769;
+  background: linear-gradient(290deg, rgb(110, 60, 232) 10%, rgba(165, 35, 35) 100%);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom right, left, right;
+  text-align: center;
+`
 
 const IndexPage = ({ data }) => (
-  <div>
-    <h1>{data.site.siteMetadata.title}</h1>
-    <p>{data.site.siteMetadata.tagline}</p>
-    <div>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
-          <Link
-            to={node.fields.slug}
-          >
-           <WorkImage url={node.frontmatter.thumb} /> 
-            <h3>
-              {node.frontmatter.title}{" "}
-            </h3>
-          </Link>
-          <p>{node.frontmatter.description}</p>
-          <Tags list={node.frontmatter.tags || []}/>
-        </div>
-      ))}
-    </div>
-  </div>
+  <Wrapper>
+    <img src={logo} style={{ height: '100px' }}/>
+    <h1>Thom Allen</h1>
+    <h2>Front End Developer at Zzish</h2>
+    <button>GitHub</button>
+    <button>Linkedin</button>
+  </Wrapper>
 );
 
 export const query = graphql`
