@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "tjatsby",
+  "description": "thomjamesallen.com portfolio site, powered by Gatsby",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Thom Allen",
   "dependencies": {
     "emotion": "^8.0.12",
     "emotion-server": "^8.0.12",
@@ -15,9 +15,6 @@
     "react-emotion": "^8.0.12",
     "react-helmet": "^5.2.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
