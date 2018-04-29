@@ -9,3 +9,23 @@ body {
 html, body, div[data-reactroot], div#___gatsby {
   height: 100%;
 }
+a, button {
+  color: #da4dfd;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 12px;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
