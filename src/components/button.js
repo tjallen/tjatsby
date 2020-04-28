@@ -2,8 +2,8 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Btn = styled.button`
-  background: #232323;
-  color: #da4dfd;
+  color: white;
+  background-color: #2096f3;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;

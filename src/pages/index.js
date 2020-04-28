@@ -50,20 +50,34 @@ const IndexPage = ({ data }) => (
           <img src={logo} alt="Thom Allen logo" style={{ height: "60px" }} />
           <h1>Thom Allen</h1>
         </LogoBox>
+        <p>
+          Yo. I'm an experienced front-end web developer passionate about
+          building effective, user-friendly web experiences.
+        </p>
         <Subhead>Currently</Subhead>
+        <h2>
+          On a temporary COVID hiatus. Will be available for remote contracts
+          soon.
+        </h2>
+        <Subhead>Previously</Subhead>
         <h2>
           Front-end developer at <a href="http://www.zzish.com">Zzish</a>
         </h2>
-        <Subhead>Previously</Subhead>
+        <Subhead>Even more previously</Subhead>
         <h2>Freelance &amp; open-source developer</h2>
-        <Subhead>Links and shit</Subhead>
+        <Subhead>Links n shit</Subhead>
+
         <ButtonGroup>
           <Button href="http://github.com/tjallen">GitHub</Button>
+          <Button href="mailto:thomwork@gmail.com">Email</Button>
           <Button href="https://www.linkedin.com/in/thom-allen-797040155/">
             Linkedin
           </Button>
-          <Button href="mailto:thomwork@gmail.com">Email</Button>
         </ButtonGroup>
+        <p>
+          Email if you want to reach me. More info about my work & experience on
+          Linkedin. Cheers!
+        </p>
       </Inner>
     </Wrapper>
   </Layout>
