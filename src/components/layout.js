@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Helmet } from "react-helmet";
-// import Header from "../components/Header";
 
 import "./layout.css";
 
@@ -11,13 +10,12 @@ export default ({ children }) => (
       meta={[
         {
           name: "description",
-          content:
-            "Front-end developer, currently building React web apps at Zzish",
+          content: "Front-end developer based in London",
         },
         {
           name: "keywords",
           content:
-            "thom allen, front-end, developer, london, front end, zzish, javascript, react, web apps",
+            "thom allen, front-end, developer, london, front end, zzish, javascript, react, graphql, node, web apps",
         },
       ]}
     />
