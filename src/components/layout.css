@@ -40,4 +40,10 @@ h1 {
 
 h2 {
   font-size: 1.3rem;
+  letter-spacing: -0.02rem;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 5px;
 }
