@@ -1,19 +1,31 @@
 html {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;
 }
-html, body, div[data-reactroot], div#___gatsby {
-  height: 100%;
+html,
+body,
+div[data-reactroot],
+div#___gatsby,
+div#gatsby-focus-wrapper {
+  height: 100vh;
+  min-height: 100%;
 }
-a, button {
+a,
+button {
   color: #da4dfd;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
   margin-top: 0;
 }

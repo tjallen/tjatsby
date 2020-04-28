@@ -1,8 +1,8 @@
 import React from "react";
 import GatsbyLink from "gatsby-link";
 
-export default function Tags({ pathContext }) {
-  const { posts, post, tag } = pathContext;
+export default function Tags({ pageContext }) {
+  const { posts, post, tag } = pageContext;
   if (tag) {
     return (
       <div>
@@ -29,8 +29,8 @@ export default function Tags({ pathContext }) {
     <div>
       <h1>Tags</h1>
       <ul className="tags">
-        {Object.keys(posts).map(tagName => {
-          const tags = posts[tagName];
+        {Object.keys(posts).map((tagName) => {
+          //   const tags = posts[tagName];
           return (
             <li key={tagName}>
               <GatsbyLink to={`/tags/${tagName}`}>{tagName}</GatsbyLink>

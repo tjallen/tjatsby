@@ -1,8 +1,8 @@
-import React from 'react';
-import { withPrefix } from 'gatsby-link';
-import styled from 'react-emotion';
+import React from "react";
+import { withPrefix } from "gatsby-link";
+import styled from "@emotion/styled";
 
-const StyledImage = styled('img')`
+const StyledImage = styled("img")`
   max-height: 100px;
   width: auto;
   float: left;

@@ -1,24 +1,24 @@
-const path = require('path');
-const { createFilePath } = require('gatsby-source-filesystem');
+const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem");
 
-exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
-  const { createNodeField } = boundActionCreators;
-  if (node.internal.type === 'MarkdownRemark') {
-    const slugValue = createFilePath({ node, getNode, basePath: 'pages'});
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions;
+  if (node.internal.type === "MarkdownRemark") {
+    const slugValue = createFilePath({ node, getNode, basePath: "pages" });
     createNodeField({
       node,
-      name: 'slug',
+      name: "slug",
       value: slugValue,
     });
-  };
+  }
 };
 
 const createTagPages = (createPage, edges) => {
-  const tagTemplate = path.resolve('./src/templates/tags.js');
+  const tagTemplate = path.resolve("./src/templates/tags.js");
   const posts = {};
   edges.forEach(({ node }) => {
     if (node.frontmatter.tags) {
-      node.frontmatter.tags.forEach(tag => {
+      node.frontmatter.tags.forEach((tag) => {
         if (!posts[tag]) {
           posts[tag] = [];
         }
@@ -28,14 +28,14 @@ const createTagPages = (createPage, edges) => {
   });
 
   createPage({
-    path: '/tags',
+    path: "/tags",
     component: tagTemplate,
-    context : {
+    context: {
       posts,
     },
   });
 
-  Object.keys(posts).forEach(tagName => {
+  Object.keys(posts).forEach((tagName) => {
     const post = posts[tagName];
     createPage({
       path: `tags/${tagName}`,
@@ -49,14 +49,14 @@ const createTagPages = (createPage, edges) => {
   });
 };
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions;
   return new Promise((resolve, reject) => {
     graphql(`
       {
         allMarkdownRemark {
           edges {
-            node { 
+            node {
               fields {
                 slug
               }
@@ -68,20 +68,20 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
         }
       }
-    `).then(result => {
+    `).then((result) => {
       const posts = result.data.allMarkdownRemark.edges;
       createTagPages(createPage, posts);
       posts.forEach(({ node }) => {
         createPage({
           path: node.fields.slug,
-          component: path.resolve('./src/templates/post.js'),
+          component: path.resolve("./src/templates/post.js"),
           context: {
             // data passed to context is available in queries as graphql variables
             slug: node.fields.slug,
           },
-        })
-      })
-      resolve()
-    })
-  })
-}
+        });
+      });
+      resolve();
+    });
+  });
+};

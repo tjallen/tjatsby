@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'react-emotion';
+import React from "react";
+import styled from "@emotion/styled";
 
-const StyledP = styled('p')`
+const StyledP = styled("p")`
   color: #989898;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -9,9 +9,6 @@ const StyledP = styled('p')`
   letter-spacing: 0.1rem;
 `;
 
-const Subhead = ({ children }) => (
-  <StyledP>{children}</StyledP>
-);
+const Subhead = ({ children }) => <StyledP>{children}</StyledP>;
 
-export default Subhead; 
-
+export default Subhead;
