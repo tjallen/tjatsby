@@ -28,6 +28,7 @@ h5,
 h6 {
   font-weight: normal;
   margin-top: 0;
+  color: #242424;
 }
 
 h1 {
@@ -45,5 +46,7 @@ h2 {
 }
 
 p {
-  margin-top: 5px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  line-height: 26px;
 }

@@ -51,33 +51,46 @@ const IndexPage = ({ data }) => (
           <h1>Thom Allen</h1>
         </LogoBox>
         <h2>
-          Yo. I'm an experienced front-end web developer passionate about
+          Hello! I'm an experienced front-end web developer passionate about
           building effective, user-friendly web experiences.
         </h2>
         <Subhead>Currently</Subhead>
         <p>
-          On a temporary COVID hiatus. Will be available for remote contracts
-          soon.
+          Taking a break but likely available for interesting React-focused
+          remote contracts starting around October-ish.
         </p>
         <Subhead>Previously</Subhead>
         <p>
           Front-end developer at <a href="http://www.zzish.com">Zzish</a>
         </p>
-        <Subhead>Even more previously</Subhead>
-        <p>Freelance &amp; open-source developer</p>
-        <Subhead>Links n shit</Subhead>
+
+        <Subhead>About me</Subhead>
+        <p>
+          My body may be here, but my mind is in the Stone Sentinel Maze in
+          Dynasty Warriors 3 for the PlayStation 2 😔
+        </p>
+        <p>
+          I’ve spent the majority of recent years working on the front-end of
+          web apps, typically using React, but have a broad range of experience.
+          Click below to see more stuff I've worked on.
+        </p>
 
         <ButtonGroup>
-          <Button href="http://github.com/tjallen">GitHub</Button>
-          <Button href="mailto:thomwork@gmail.com">Email</Button>
-          <Button href="https://www.linkedin.com/in/thom-allen-797040155/">
-            Linkedin
+          <Button href="/thom_allen_cv_2020.pdf" title="My CV">
+            CV
+          </Button>
+          <Button href="http://github.com/tjallen" title="My GitHub">
+            GitHub
+          </Button>
+          <Button
+            href="https://www.linkedin.com/in/thom-allen-797040155/"
+            title="LinkedIn"
+          >
+            LinkedIn
           </Button>
         </ButtonGroup>
-        <p>
-          Email if you want to reach me. More info about my work & experience on
-          Linkedin. Cheers!
-        </p>
+        <Subhead>Get in touch</Subhead>
+        <Button href="mailto:thomwork@gmail.com">Email me</Button>
       </Inner>
     </Wrapper>
   </Layout>
