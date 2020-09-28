@@ -32,7 +32,7 @@ h6 {
 }
 
 h1 {
-  font-size: 12px;
+  font-size: 0.777rem;
   margin: 0;
   text-transform: uppercase;
   font-weight: bold;
@@ -42,11 +42,11 @@ h1 {
 h2 {
   font-size: 1.3rem;
   letter-spacing: -0.02rem;
-  font-weight: bold;
+  line-height: 1.9rem;
 }
 
 p {
   margin-top: 0px;
   margin-bottom: 16px;
-  line-height: 26px;
+  line-height: 1.6rem;
 }

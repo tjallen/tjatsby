@@ -67,10 +67,13 @@ const IndexPage = ({ data }) => (
         <Subhead>About me</Subhead>
         <p>
           My body may be here, but my mind is in the Stone Sentinel Maze in
-          Dynasty Warriors 3 for the PlayStation 2 😔
+          Dynasty Warriors 3 for the PlayStation 2{" "}
+          <span role="img" aria-label="pensive emoji">
+            😔
+          </span>
         </p>
         <p>
-          I’ve spent the majority of recent years working on the front-end of
+          I've spent the majority of recent years working on the front-end of
           web apps, typically using React, but have a broad range of experience.
           Click below to see more stuff I've worked on.
         </p>
@@ -84,7 +87,7 @@ const IndexPage = ({ data }) => (
           </Button>
           <Button
             href="https://www.linkedin.com/in/thom-allen-797040155/"
-            title="LinkedIn"
+            title="Enter the buzzword zone on LinkedIn. Kudos!"
           >
             LinkedIn
           </Button>
