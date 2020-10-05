@@ -3,6 +3,9 @@ import { graphql } from "gatsby";
 import Button from "../components/button";
 import Subhead from "../components/subhead";
 import logo from "../../static/images/tja_logo.svg";
+import zzishLogo from "../../static/images/zzish_logo.svg";
+import zzishLogoPurp from "../../static/images/zzish_logo_purple.png";
+import zzishInsights from "../../static/images/zzish_insights.svg";
 import styled from "@emotion/styled";
 import Layout from "../components/layout";
 
@@ -40,6 +43,26 @@ const LogoBox = styled.div`
   text-align: center;
 `;
 
+const TechList = styled.span`
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #545454;
+  font-weight: bold;
+`;
+
+const ImageBox = styled.div`
+  margin: 16px 0;
+  min-height: 120px;
+
+  background: url(${zzishLogoPurp}) no-repeat 10%,
+    url(${zzishInsights}) no-repeat 90%, #f3f3f3;
+  background-size: contain;
+  border-radius: 4px;
+`;
+
+const ZzishImg = styled.img``;
+const ZzishBg = styled.img``;
+
 const ButtonGroup = styled.div``;
 
 const IndexPage = ({ data }) => (
@@ -55,14 +78,22 @@ const IndexPage = ({ data }) => (
           building effective, user-friendly web experiences.
         </h2>
         <Subhead>Currently</Subhead>
-        <p>
-          Taking a break but likely available for interesting React-focused
-          remote contracts starting around October-ish.
-        </p>
+        <p>Available for interesting React-focused remote contracts.</p>
         <Subhead>Previously</Subhead>
+        <ImageBox></ImageBox>
         <p>
-          Front-end developer at <a href="http://www.zzish.com">Zzish</a>
+          I most recently spent two years working as part of the tech team at{" "}
+          <a href="http://www.zzish.com">Zzish</a>, an education technology
+          startup who focus on improving the education experience for teachers
+          and students, primarily via their award-winning teaching platform and
+          assessment tool, <a href="http://www.quizalize.com">Quizalize</a>.
+          There's more info about my work at Zzish on my{" "}
+          <a href="/thom_allen_cv_2020.pdf">CV</a>.
         </p>
+        <TechList>
+          Tech: React, Relay / Apollo, GraphQL, JavaScript ES6 + TypeScript /
+          Flow, Node + Express, MongoDB, Webpack, Python
+        </TechList>
 
         <Subhead>About me</Subhead>
         <p>
@@ -75,7 +106,7 @@ const IndexPage = ({ data }) => (
         <p>
           I've spent the majority of recent years working on the front-end of
           web apps, typically using React, but have a broad range of experience.
-          Click below to see more stuff I've worked on.
+          Click below for more about me and the projects I've worked on.
         </p>
 
         <ButtonGroup>
