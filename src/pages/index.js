@@ -4,7 +4,7 @@ import Button from "../components/button";
 import Subhead from "../components/subhead";
 import logo from "../../static/images/tja_logo.svg";
 import zzishLogoPurp from "../../static/images/zzish_logo_purple.png";
-import zzishInsights from "../../static/images/zzish_insights.svg";
+import zzishInsights from "../../static/images/zzish_insights.png";
 import styled from "@emotion/styled";
 import Layout from "../components/layout";
 
@@ -38,7 +38,7 @@ const Inner = styled.div`
   box-sizing: border-box;
   box-shadow: 0px 4px 6px rgba(76, 76, 76, 0.55);
   @media (min-width: ${breakpoint}) {
-    max-width: 70vw;
+    max-width: 1200px;
   }
 `;
 
