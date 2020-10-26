@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Button from "../components/button";
 import Subhead from "../components/subhead";
 import logo from "../../static/images/tja_logo.svg";
+import me from "../../static/images/tja.jpeg";
 import zzishLogoPurp from "../../static/images/zzish_logo_purple.png";
 import zzishInsights from "../../static/images/zzish_insights.png";
 import styled from "@emotion/styled";
@@ -38,7 +39,7 @@ const Inner = styled.div`
   box-sizing: border-box;
   box-shadow: 0px 4px 6px rgba(76, 76, 76, 0.55);
   @media (min-width: ${breakpoint}) {
-    max-width: 1200px;
+    max-width: 960px;
   }
 `;
 
@@ -46,6 +47,21 @@ const Header = styled.div`
   @media (min-width: ${breakpoint}) {
     margin: 0 16px;
   }
+  h2 {
+    margin: 0;
+    padding: 16px 0;
+    border-top: 3px solid rgb(165 35 35 / 44%);
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    font-weight: bold;
+  }
+`;
+
+const HeaderHero = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 8px 20px 8px;
 `;
 
 const ColWrapper = styled.div`
@@ -62,8 +78,18 @@ const Col = styled.div`
 `;
 
 const LogoBox = styled.div`
-  margin: 10px 0 25px;
   text-align: center;
+  flex: 0 1;
+`;
+
+const MeBox = styled.div`
+  flex: 0 1;
+  border-radius: 100%;
+  img {
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 100%;
+  }
 `;
 
 const TechList = styled.span`
@@ -90,10 +116,19 @@ const IndexPage = ({ data }) => (
     <Wrapper>
       <Inner>
         <Header>
-          <LogoBox>
-            <img src={logo} alt="Thom Allen logo" style={{ height: "60px" }} />
-            <h1>Thom Allen</h1>
-          </LogoBox>
+          <HeaderHero>
+            <LogoBox>
+              <img
+                src={logo}
+                alt="Thom Allen logo"
+                style={{ height: "60px" }}
+              />
+              <h1>Thom&nbsp;Allen</h1>
+            </LogoBox>
+            <MeBox>
+              <img src={me} alt="It me (unfortunately not the dog)" />
+            </MeBox>
+          </HeaderHero>
           <h2>
             Hello! I'm an experienced front-end web developer passionate about
             building effective, user-friendly web experiences.
