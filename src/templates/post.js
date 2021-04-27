@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Link from "gatsby-link";
 
-export default ({ data }) => {
+const post = ({ data }) => {
   const post = data.markdownRemark;
   return (
     <div>
@@ -23,3 +23,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default post;

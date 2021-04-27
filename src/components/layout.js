@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import "./layout.css";
 
-export default ({ children }) => (
+const layout = ({ children }) => (
   <Fragment>
     <Helmet
       title="Thom Allen, front-end developer"
@@ -22,3 +22,4 @@ export default ({ children }) => (
     {children}
   </Fragment>
 );
+export default layout;
