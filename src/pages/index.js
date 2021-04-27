@@ -126,7 +126,7 @@ const IndexPage = ({ data }) => (
               <h1>Thom&nbsp;Allen</h1>
             </LogoBox>
             <MeBox>
-              <img src={me} alt="It me (unfortunately not the dog)" />
+              <img src={me} alt="I'm the one with the glasses" />
             </MeBox>
           </HeaderHero>
           <h2>
@@ -136,16 +136,14 @@ const IndexPage = ({ data }) => (
         </Header>
         <ColWrapper>
           <Col>
-            <Subhead>Currently</Subhead>
-            <p>Available for interesting React-focused remote contracts.</p>
-            <Subhead>Previously</Subhead>
-            <ImageBox></ImageBox>
+            <Subhead>Status</Subhead>
+            <ImageBox />
             <p>
-              I most recently spent two years working as part of the tech team
-              at <a href="http://www.zzish.com">Zzish</a>, an education
-              technology startup who focus on improving the education experience
-              for teachers and students, primarily via their award-winning
-              teaching platform and assessment tool,{" "}
+              I'm currently working as part of the tech team at{" "}
+              <a href="http://www.zzish.com">Zzish</a>, an education technology
+              startup who focus on improving the education experience for
+              teachers and students, primarily via their award-winning teaching
+              platform and assessment tool,{" "}
               <a href="http://www.quizalize.com">Quizalize</a>. There's more
               info about my work at Zzish on my{" "}
               <a href="/thom_allen_cv_2020.pdf">CV</a>.
@@ -167,7 +165,7 @@ const IndexPage = ({ data }) => (
             </p>
             <p>
               I've spent the majority of recent years working on the front-end
-              of web apps, typically using React, but have a broad range of
+              of web apps, typically using React, but also have some full stack
               experience. Click below for more about me and the projects I've
               worked on.
             </p>
