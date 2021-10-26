@@ -146,7 +146,7 @@ const IndexPage = ({ data }) => (
               platform and assessment tool,{" "}
               <a href="http://www.quizalize.com">Quizalize</a>. There's more
               info about my work at Zzish on my{" "}
-              <a href="/thom_allen_cv_2020.pdf">CV</a>.
+              <a href="/TJA_CV.pdf">CV</a>.
             </p>
             <TechList>
               Tech: React, Relay / Apollo, GraphQL, JavaScript ES6 + TypeScript
@@ -171,7 +171,7 @@ const IndexPage = ({ data }) => (
             </p>
 
             <ButtonGroup>
-              <Button href="/thom_allen_cv_2020.pdf" title="My CV">
+              <Button href="/TJA_CV.pdf" title="My CV">
                 CV
               </Button>
               <Button href="http://github.com/tjallen" title="My GitHub">
